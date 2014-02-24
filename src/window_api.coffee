@@ -37,14 +37,6 @@ module.exports = (http) ->
     http.post "/frame"
     return
 
-  switchToDefault2: ->
-    http.post "/frame", { id: ''};
-    return
-
   switchToFrame: (indexOrNameOrId) ->
-    http.post "/frame", { indexOrNameOrId }
-    return
-
-  switchToFrame2: (indexOrNameOrId) ->
     http.post "/frame", { id: indexOrNameOrId }
     return
