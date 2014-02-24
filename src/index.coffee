@@ -42,6 +42,7 @@ createCookieApi = require './cookie_api'
 createElementApi = require './element_api'
 createNavigationApi = require './navigation_api'
 createPageApi = require './page_api'
+createWindowApi = require './window_api'
 createDebugApi = require './debug_api'
 
 module.exports = class WebDriver
@@ -59,6 +60,7 @@ module.exports = class WebDriver
     extend this, createElementApi(@http)
     extend this, createNavigationApi(@http)
     extend this, createPageApi(@http)
+    extend this, createWindowApi(@http)
     extend this, createDebugApi(@http)
 
   on: (event, callback) ->
